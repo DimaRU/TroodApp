@@ -9,7 +9,7 @@
 import UIKit
 
 class EventsTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +18,9 @@ class EventsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let barButtonItem = self.navigationItem.leftBarButtonItem!
+        let profileImage = UIImage(named: "ava_1.png", in: nil, compatibleWith:nil)
+        barButtonItem.image = profileImage?.withRenderingMode(.alwaysOriginal)
     }
 
     override func didReceiveMemoryWarning() {

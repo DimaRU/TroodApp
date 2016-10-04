@@ -10,15 +10,15 @@
             <objects>
                 <tableViewController id="ZZh-u0-q2x" customClass="EventsTableViewController" customModule="TroodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PQ9-Bc-Rdz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dxK-qT-fow">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxK-qT-fow" id="N9m-Ti-42Q">
-                                    <frame key="frameInset" width="320" height="43"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -28,8 +28,29 @@
                             <outlet property="delegate" destination="ZZh-u0-q2x" id="nsR-Ik-6g7"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Events" image="att_a" selectedImage="att_a" id="PE3-0U-BJo"/>
-                    <navigationItem key="navigationItem" id="H3d-C1-3M3"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="att_p" badgeValue="3" selectedImage="att_a" id="PE3-0U-BJo"/>
+                    <navigationItem key="navigationItem" id="H3d-C1-3M3">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="ava_1" id="8wX-Oi-72c">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="center" id="QGv-1P-ExQ">
+                            <rect key="frame" x="124" y="6" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3OY-Ey-Hmm"/>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="3OY-Ey-Hmm" firstAttribute="width" secondItem="QGv-1P-ExQ" secondAttribute="width" id="5jC-Hr-z1y"/>
+                                <constraint firstItem="3OY-Ey-Hmm" firstAttribute="centerX" secondItem="QGv-1P-ExQ" secondAttribute="centerX" id="6oa-tE-NOf"/>
+                                <constraint firstItem="3OY-Ey-Hmm" firstAttribute="centerY" secondItem="QGv-1P-ExQ" secondAttribute="centerY" id="bjj-cQ-kO4"/>
+                                <constraint firstItem="3OY-Ey-Hmm" firstAttribute="height" secondItem="QGv-1P-ExQ" secondAttribute="height" id="p8o-v9-dOm"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" image="filter" id="lTs-al-Fox">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfg-UT-1Wy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,37 +59,35 @@
         <!--Reports-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TroodApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="ReportsViewController" customModule="TroodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reports" image="graphic_a" id="3sU-vC-key"/>
-                    <navigationItem key="navigationItem" id="ScR-hM-LDz"/>
+                    <navigationItem key="navigationItem" id="ScR-hM-LDz">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="ava_1" id="hDd-2n-ZYy"/>
+                        <view key="titleView" contentMode="center" id="9YO-yL-hOn">
+                            <rect key="frame" x="124" y="6" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xoA-GI-Cgf"/>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="xoA-GI-Cgf" firstAttribute="height" secondItem="9YO-yL-hOn" secondAttribute="height" id="9al-4J-Rgz"/>
+                                <constraint firstItem="xoA-GI-Cgf" firstAttribute="centerY" secondItem="9YO-yL-hOn" secondAttribute="centerY" id="Hc0-c7-jUo"/>
+                                <constraint firstItem="xoA-GI-Cgf" firstAttribute="centerX" secondItem="9YO-yL-hOn" secondAttribute="centerX" id="bxL-EI-ON5"/>
+                                <constraint firstItem="xoA-GI-Cgf" firstAttribute="width" secondItem="9YO-yL-hOn" secondAttribute="width" id="kBt-L8-bv0"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" image="filter" id="ytn-pU-dvj"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,36 +96,57 @@
         <!--Stat-->
         <scene sceneID="ToY-sc-mpM">
             <objects>
-                <viewController id="NK1-41-dK6" sceneMemberID="viewController">
+                <viewController id="NK1-41-dK6" customClass="StatViewController" customModule="TroodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sbx-r2-5st"/>
                         <viewControllerLayoutGuide type="bottom" id="CI9-Ei-u8U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PaH-5U-OE2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Stat" image="count_a" id="Bwt-o9-jfC"/>
-                    <navigationItem key="navigationItem" id="NIS-Ub-vE4"/>
+                    <navigationItem key="navigationItem" id="NIS-Ub-vE4">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="ava_1" id="q7W-pr-lXs">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="center" id="zne-fD-pnC">
+                            <rect key="frame" x="96" y="6" width="128" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8F6-9b-j5Z"/>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="8F6-9b-j5Z" firstAttribute="width" secondItem="zne-fD-pnC" secondAttribute="width" id="AsI-dr-4f2"/>
+                                <constraint firstItem="8F6-9b-j5Z" firstAttribute="height" secondItem="zne-fD-pnC" secondAttribute="height" id="BAa-8k-b6W"/>
+                                <constraint firstItem="8F6-9b-j5Z" firstAttribute="centerY" secondItem="zne-fD-pnC" secondAttribute="centerY" id="bKF-lX-1Bv"/>
+                                <constraint firstItem="8F6-9b-j5Z" firstAttribute="centerX" secondItem="zne-fD-pnC" secondAttribute="centerX" id="gXD-fk-zdR"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" image="filter" id="bhR-EG-aXa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0z5-vd-Vwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1763" y="1100"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Trood Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TroodTabBarController" customModule="TroodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Yep-Tf-fU0" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="0dr-1X-ptn" kind="relationship" relationship="viewControllers" id="I1g-G1-8r1"/>
+                        <segue destination="Yep-Tf-fU0" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Vtp-6v-zRM" kind="relationship" relationship="viewControllers" id="Edp-bn-f4b"/>
                     </connections>
                 </tabBarController>
@@ -118,11 +158,15 @@
         <scene sceneID="J2Q-Fa-eUW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0dr-1X-ptn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" image="att_a" badgeValue="2" selectedImage="att_a" id="Ydh-yh-WY8"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="att_p" badgeValue="2" selectedImage="att_a" id="Ydh-yh-WY8"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HNB-v6-euH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" shadowImage="9C740692-0281-4CDD-8DB9-0DBD8AE1931A" id="HNB-v6-euH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -139,9 +183,11 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yep-Tf-fU0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Reports" image="graphic_a" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gnL-md-AV4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="gnL-md-AV4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -158,9 +204,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vtp-6v-zRM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Stat" image="count_a" id="s4C-CN-PL4"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dgZ-GO-88G">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="dgZ-GO-88G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12941176469999999" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -173,8 +220,211 @@
         </scene>
     </scenes>
     <resources>
+        <image name="9C740692-0281-4CDD-8DB9-0DBD8AE1931A" width="97" height="20">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
+GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
+DBIAwAAAgAKACtISCRMVWk5TLm9iamVjdHOhFIADgAnSEgkXGqIYGYAEgAWACBAA0h0JHh9fEBROU1RJ
+RkZSZXByZXNlbnRhdGlvboAGgAdPESteTU0AKgAAHlj///+r////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////H
+/////////8r///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+G////u///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////+JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///2n/////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////jgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAD///9w////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////44AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////cP//////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////+O
+AAAAAAAAAAAAAAAAAAAAAAAAAAD///8O////W////0UAAAAAAAAAAAAAAAAAAAAAAAAAAP///yj///9e
+////KQAAAAD///8R////W////yIAAAAA////GP///1v///9d////Xv///1z///9D////DwAAAAAAAAAA
+////Av///0z///9c////Xv///17///9Q////IwAAAAAAAAAAAAAAAAAAAAAAAAAA////FP///0r///9j
+////TP///xYAAAAAAAAAAAAAAAD///8L////Vf///13///9e////Xf///0v///8aAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAP///3D///////////////////////////////////////////////L///+7
+////nP///7D////n//////////r///+p////tv////////////////////f///+n////vP//////////
+////////////////////////////////////jgAAAAAAAAAAAAAAAAAAAAAAAAAA////Kf/////////4
+////LAAAAAAAAAAAAAAAAP///wT////D/////////3kAAAAA////Mv////////9kAAAAAP///0X/////
+////9P///+v////v/////P///93///9AAAAAAP///wf////g/////////+v////s////9v////X///9/
+////AgAAAAD///8B////bv///+r////5////6/////j////s////cv///wIAAAAA////H/////n////6
+////6////+3////5////7f///2EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///9w////////////////
+/////////////////////////6n///8h////Bf///xb///8L////EP///4L////6////dwAAAAD///+v
+//////////////93AAAAAP///6v//////////////////////////////////////////////44AAAAA
+AAAAAAAAAAAAAAAAAAAAAP///yj////6/////////6MAAAAAAAAAAAAAAAD///9R//////////////91
+AAAAAP///zD/////////YQAAAAD///9D/////////1j///8S////Ff///zT////R////1////wj///8G
+////4f///67///8S////E////yH///+Q/////////z4AAAAA////cP////////+h////Kv///xH///8o
+////mv////////92AAAAAP///x7////6////h////xL///8T////KP///6/////1////IAAAAAAAAAAA
+AAAAAAAAAAAAAAAA////cP///////////////////////////////////7H///8C////Sv///8/////v
+////3v///3b///9l/////P////n///9A////Fv///+b///+2AAAAAP///3b/////////////////////
+//////////////////////////////+OAAAAAAAAAAAAAAAAAAAAAAAAAAD///8p////+f///7P////4
+////MwAAAAD///8H////z////8T////t////dwAAAAD///8w/////////2EAAAAA////Q/////////9J
+AAAAAAAAAAAAAAAA////Zf////////8b////BP///+L///+mAAAAAAAAAAAAAAAA////Ff////r///9p
+////Dv///+7///+0AAAAAAAAAAAAAAAAAAAAAAAAAAD///+u////8////xf///8a////+////3wAAAAA
+AAAAAAAAAAD///80/////////0QAAAAAAAAAAAAAAAAAAAAAAAAAAP///3D/////////////////////
+//////////n///8t////LP////X/////////////////////////////////////////2v///xP///86
+////Hf///zv////2////////////////////////////////////////////////////jgAAAAAAAAAA
+AAAAAAAAAAAAAAAA////Kf////////9Y////zf///7EAAAAA////Wf////////9H////6f///3gAAAAA
+////MP////////9hAAAAAP///0P/////////RQAAAAAAAAAA////A////6P////q////Df///wX////i
+////pAAAAAAAAAAAAAAAAP///1H/////////R////zn/////////VQAAAAAAAAAAAAAAAAAAAAAAAAAA
+////T/////////9E////Fv////v///94AAAAAAAAAAAAAAAA////df////////8sAAAAAAAAAAAAAAAA
+AAAAAAAAAAD///9w///////////////////////////////e////Af///4P/////////////////////
+//////////////////////////////+mAAAAAP///wv////Y////////////////////////////////
+/////////////////////////44AAAAAAAAAAAAAAAAAAAAAAAAAAP///yn/////////Sf///07/////
+////R////9L///+q////Cv////D///94AAAAAP///zD/////////YQAAAAD///9D/////////73///+g
+////pv///8f////5////bwAAAAD///8H////3P///+D///+g////ov///7T////y////uv///wf///8/
+/////////1YAAAAAAAAAAAAAAAAAAAAAAAAAAP///1D/////////Q////xb////0////0P///6D///+k
+////u/////j///+a////AwAAAAAAAAAAAAAAAAAAAAAAAAAA////cP//////////////////////////
+////3////wL///9/////////////////////////////////////////////////////gQAAAAD///8C
+////pv////////////////////////////////////////////////////////+OAAAAAAAAAAAAAAAA
+AAAAAAAAAAD///8p/////////1L///8C////yv///+z////3////Lv///wr////v////eAAAAAD///8w
+/////////2EAAAAA////Q//////////Q////vP///8T/////////gwAAAAAAAAAA////B////9v////p
+////vP///7z////0////0v///wsAAAAA////Ff///+z///+3////AQAAAAAAAAAAAAAAAAAAAAD///+w
+////8f///xb///8a////8////97///+8////vf////7///+x////AgAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAP///3D///////////////////////////////n///8v////Jv////D/////////////////////
+////////////////////tQAAAAD///9v////RP///xD////W////////////////////////////////
+////////////////////jgAAAAAAAAAAAAAAAAAAAAAAAAAA////Kf////////9TAAAAAP///1D/////
+////ogAAAAD///8Q////7////3gAAAAA////MP////////9hAAAAAP///0P/////////RwAAAAAAAAAA
+////qP///97///8XAAAAAP///wf////j////pQAAAAAAAAAA////Uv////z///9TAAAAAAAAAAD///9s
+/////////6T///8r////Ef///yj///+c/////////3MAAAAA////Hv////z///96AAAAAAAAAAD///93
+////9f///zQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///9w////////////////////////////////
+////s////wL///8/////wv///+j////V////bv///2D////+////4////xn///89////+////9z///8T
+////Ov////b//////////////////////////////////////////////44AAAAAAAAAAAAAAAAAAAAA
+AAAAAP///yr/////////VQAAAAD///8F////Yv///yAAAAAA////Ef////X///97AAAAAP///zH/////
+////ZAAAAAD///9F/////////00AAAAAAAAAAP///x7////v////rf///wb///8G////6P///6sAAAAA
+AAAAAAAAAAD///+q////8P///yYAAAAAAAAAAP///2v////p////+f///+v////4////6////3D///8B
+AAAAAP///x//////////gAAAAAAAAAAA////CP///87////X////EwAAAAAAAAAAAAAAAAAAAAAAAAAA
+////cP////////////////////////////////////////+p////IAAAAAD///8L////Bv///xf///+P
+////8////0L///8S////2f//////////////qwAAAAD///9v/////P//////////////////////////
+//////////////+OAAAAAAAAAAAAAAAAAAAAAAAAAAD///8O////Vf///xsAAAAAAAAAAAAAAAAAAAAA
+AAAAAP///wX///9P////KAAAAAD///8Q////Vv///yAAAAAA////Fv///1b///8ZAAAAAAAAAAAAAAAA
+////Nf///1j///8M////Af///0v///84AAAAAAAAAAAAAAAA////Ff///1r///8nAAAAAAAAAAAAAAAA
+////FP///0r///9j////S////xYAAAAAAAAAAAAAAAD///8K////U////yoAAAAAAAAAAAAAAAD///8j
+////XP///xoAAAAAAAAAAAAAAAAAAAAAAAAAAP///3D/////////////////////////////////////
+//////////H///+6////nf///7X////s/////////+z///+k////zv////////////////////////+5
+////rf////j/////////////////////////////////////////jgAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///9w
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////44AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////cP//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////+JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///2n/////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////yv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G////hv///4b///+G
+////hv///4b///+G////hv///4b///+7////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////qv//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////xwAOAQAAAwAA
+AAEAYQAAAQEAAwAAAAEAFAAAAQIAAwAAAAQAAB8GAQMAAwAAAAEAAQAAAQYAAwAAAAEAAgAAAREABAAA
+AAEAAAAIARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAFAAAARcABAAAAAEAAB5QARwAAwAA
+AAEAAQAAAVIAAwAAAAEAAgAAAVMAAwAAAAQAAB8Oh3MABwAADEgAAB8WAAAAAAAIAAgACAAIAAEAAQAB
+AAEAAAxITGlubwIQAABtbnRyUkdCIFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAA
+AAAAAAAAAAAAAAAA9tYAAQAAAADTLUhQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAABFjcHJ0AAABUAAAADNkZXNjAAABhAAAAGx3dHB0AAAB8AAAABRia3B0AAACBAAA
+ABRyWFlaAAACGAAAABRnWFlaAAACLAAAABRiWFlaAAACQAAAABRkbW5kAAACVAAAAHBkbWRkAAACxAAA
+AIh2dWVkAAADTAAAAIZ2aWV3AAAD1AAAACRsdW1pAAAD+AAAABRtZWFzAAAEDAAAACR0ZWNoAAAEMAAA
+AAxyVFJDAAAEPAAACAxnVFJDAAAEPAAACAxiVFJDAAAEPAAACAx0ZXh0AAAAAENvcHlyaWdodCAoYykg
+MTk5OCBIZXdsZXR0LVBhY2thcmQgQ29tcGFueQAAZGVzYwAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEA
+AAAAAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAFhZ
+WiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z2Rl
+c2MAAAAAAAAAFklFQyBodHRwOi8vd3d3LmllYy5jaAAAAAAAAAAAAAAAFklFQyBodHRwOi8vd3d3Lmll
+Yy5jaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAA
+AC5JRUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAC5J
+RUMgNjE5NjYtMi4xIERlZmF1bHQgUkdCIGNvbG91ciBzcGFjZSAtIHNSR0IAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAZGVzYwAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIu
+MQAAAAAAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZpZXcAAAAAABOk/gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZ
+WiAAAAAAAEwJVgBQAAAAVx/nbWVhcwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAo8AAAACc2lnIAAA
+AABDUlQgY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBj
+AGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7
+AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJ
+AdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLg
+AusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRI
+BFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYG
+BhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgf
+CDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqY
+Cq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10
+DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4QmxC5
+ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQGFCcUSRRq
+FIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX9xgbGEAYZRiK
+GK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIcexyjHMwc9R0e
+HUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUghdSGhIc4h+yIn
+IlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm6CcYJ0kneier
+J9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs1y0MLUEtdi2r
+LeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0zRjN/M7gz8TQr
+NGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zst
+O2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1
+QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrE
+SwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1Nf
+U6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyG
+XNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9
+ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CG
+cOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtj
+e8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobX
+hzuHn4gEiGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLj
+k02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+L
+n/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+rAqt1q+msXKzQ
+rUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1
+uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6
+ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk
+2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy
+6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio
++Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t///SIiMkJVokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRt
+YXBJbWFnZVJlcKMkJidaTlNJbWFnZVJlcFhOU09iamVjdNIiIykqV05TQXJyYXmiKSfSIiMsLV5OU011
+dGFibGVBcnJheaMsKSfTLzAJMTIzV05TV2hpdGVcTlNDb2xvclNwYWNlRDAgMAAQA4AL0iIjNTZXTlND
+b2xvcqI1J9IiIzg5V05TSW1hZ2WiOCdfEA9OU0tleWVkQXJjaGl2ZXLRPD1Ucm9vdIABAAgAEQAaACMA
+LQAyADcARQBLAFQAWwBoAG8AdwB5AH4AgACCAIcAkgCUAJYAmACdAKAAogCkAKYAqACtAMQAxgDILCos
+Lyw6LEMsVixaLGUsbixzLHssfiyDLJIsliydLKUssiy3LLksuyzALMgsyyzQLNgs2yztLPAs9QAAAAAA
+AAIBAAAAAAAAAD4AAAAAAAAAAAAAAAAAACz3A
+</mutableData>
+        </image>
         <image name="att_a" width="28" height="28"/>
+        <image name="att_p" width="28" height="28"/>
+        <image name="ava_1" width="28" height="28"/>
         <image name="count_a" width="24" height="26"/>
+        <image name="filter" width="22" height="20"/>
         <image name="graphic_a" width="31" height="24"/>
+        <image name="logo" width="97" height="20"/>
     </resources>
 </document>

@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0A41EA931DA3C11F00F700B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41EA921DA3C11F00F700B5 /* AppDelegate.swift */; };
-		0A41EA951DA3C11F00F700B5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41EA941DA3C11F00F700B5 /* FirstViewController.swift */; };
-		0A41EA971DA3C11F00F700B5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41EA961DA3C11F00F700B5 /* SecondViewController.swift */; };
 		0A41EA9A1DA3C11F00F700B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41EA981DA3C11F00F700B5 /* Main.storyboard */; };
-		0A41EA9C1DA3C11F00F700B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A41EA9B1DA3C11F00F700B5 /* Assets.xcassets */; };
 		0A41EA9F1DA3C11F00F700B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41EA9D1DA3C11F00F700B5 /* LaunchScreen.storyboard */; };
 		0A41EAA71DA3C99F00F700B5 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41EAA61DA3C99F00F700B5 /* EventsTableViewController.swift */; };
+		0AA2E4081DA4038D00A38A8E /* TroodTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */; };
+		0AA2E40A1DA4088100A38A8E /* TroodTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */; };
+		0AA2E40C1DA415F300A38A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2E40B1DA415F300A38A8E /* Assets.xcassets */; };
+		0AA2E4101DA4351B00A38A8E /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */; };
+		0AA2E4121DA4353200A38A8E /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E4111DA4353200A38A8E /* StatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A41EA8F1DA3C11F00F700B5 /* TroodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TroodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A41EA921DA3C11F00F700B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A41EA941DA3C11F00F700B5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0A41EA961DA3C11F00F700B5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0A41EA991DA3C11F00F700B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A41EA9B1DA3C11F00F700B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A41EA9E1DA3C11F00F700B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A41EAA01DA3C11F00F700B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A41EAA61DA3C99F00F700B5 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TroodTabBarController.swift; sourceTree = "<group>"; };
+		0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TroodTabBar.swift; sourceTree = "<group>"; };
+		0AA2E40B1DA415F300A38A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		0AA2E4111DA4353200A38A8E /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +62,16 @@
 		0A41EA911DA3C11F00F700B5 /* TroodApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AA2E40B1DA415F300A38A8E /* Assets.xcassets */,
 				0A41EA921DA3C11F00F700B5 /* AppDelegate.swift */,
-				0A41EA941DA3C11F00F700B5 /* FirstViewController.swift */,
-				0A41EA961DA3C11F00F700B5 /* SecondViewController.swift */,
 				0A41EA981DA3C11F00F700B5 /* Main.storyboard */,
-				0A41EA9B1DA3C11F00F700B5 /* Assets.xcassets */,
+				0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */,
+				0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */,
+				0A41EAA61DA3C99F00F700B5 /* EventsTableViewController.swift */,
+				0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */,
+				0AA2E4111DA4353200A38A8E /* StatViewController.swift */,
 				0A41EA9D1DA3C11F00F700B5 /* LaunchScreen.storyboard */,
 				0A41EAA01DA3C11F00F700B5 /* Info.plist */,
-				0A41EAA61DA3C99F00F700B5 /* EventsTableViewController.swift */,
 			);
 			path = TroodApp;
 			sourceTree = "<group>";
@@ -131,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A41EA9F1DA3C11F00F700B5 /* LaunchScreen.storyboard in Resources */,
-				0A41EA9C1DA3C11F00F700B5 /* Assets.xcassets in Resources */,
+				0AA2E40C1DA415F300A38A8E /* Assets.xcassets in Resources */,
 				0A41EA9A1DA3C11F00F700B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A41EA971DA3C11F00F700B5 /* SecondViewController.swift in Sources */,
+				0AA2E4101DA4351B00A38A8E /* ReportsViewController.swift in Sources */,
 				0A41EA931DA3C11F00F700B5 /* AppDelegate.swift in Sources */,
 				0A41EAA71DA3C99F00F700B5 /* EventsTableViewController.swift in Sources */,
-				0A41EA951DA3C11F00F700B5 /* FirstViewController.swift in Sources */,
+				0AA2E40A1DA4088100A38A8E /* TroodTabBar.swift in Sources */,
+				0AA2E4121DA4353200A38A8E /* StatViewController.swift in Sources */,
+				0AA2E4081DA4038D00A38A8E /* TroodTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +318,7 @@
 				0A41EAA51DA3C11F00F700B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
