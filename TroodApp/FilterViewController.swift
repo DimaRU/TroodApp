@@ -1,25 +1,19 @@
 //
-//  StatViewController.swift
+//  FilterViewController.swift
 //  TroodApp
 //
-//  Created by Dmitriy Borovikov on 04.10.16.
+//  Created by Dmitriy Borovikov on 05.10.16.
 //  Copyright © 2016 Dmitriy Borovikov. All rights reserved.
 //
 
 import UIKit
-import WebKit
 
-class StatViewController: UIViewController {
+class FilterViewController: UIViewController {
 
-    @IBOutlet weak var statWebView: UIWebView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let barButtonItem = self.navigationItem.leftBarButtonItem!
-        let profileImage = UIImage(named: "ava_1.png", in: nil, compatibleWith:nil)
-        barButtonItem.image = profileImage?.withRenderingMode(.alwaysOriginal)
-        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +22,10 @@ class StatViewController: UIViewController {
     }
     
 
+    @IBAction func tapExit(_ sender: UIButton) {
+        
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
