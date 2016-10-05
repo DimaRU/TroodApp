@@ -8,19 +8,17 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: WebViewController {
 
     @IBAction func tapExitButton(_ sender: UIBarButtonItem) {
         
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        fillWebView(subdirectory: "webview/profile")
     }
 
     override func didReceiveMemoryWarning() {

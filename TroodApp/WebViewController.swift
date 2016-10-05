@@ -1,5 +1,5 @@
 //
-//  EventsViewController.swift
+//  WebViewController.swift
 //  TroodApp
 //
 //  Created by Dmitriy Borovikov on 05.10.16.
@@ -7,26 +7,40 @@
 //
 
 import UIKit
-import WebKit
 
-class EventsViewController: WebViewController {
+class WebViewController: UIViewController {
+
+    var webView = UIWebView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        let barButtonItem = self.navigationItem.leftBarButtonItem!
-        let profileImage = UIImage(named: "ava_1.png", in: nil, compatibleWith:nil)
-        barButtonItem.image = profileImage?.withRenderingMode(.alwaysOriginal)
-        
 
         fillWebView(subdirectory: "webview/events")
+        // Do any additional setup after loading the view.
+    }
+
+    
+    func fillWebView(subdirectory: String)  {
+        
+        self.view.addSubview(webView)
+        self.view.sendSubview(toBack: webView)    //  Send it under storyboard controls
+        
+        webView.frame = self.view.bounds
+        webView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        
+        if let htmlURL = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: subdirectory) {
+            print(htmlURL)
+            let reqest = URLRequest(url: htmlURL)
+            webView.loadRequest(reqest)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 
     /*
     // MARK: - Navigation

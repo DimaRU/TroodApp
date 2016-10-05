@@ -1,0 +1,276 @@
+@import "../styles/reset.css";
+@import "../styles/globalStyles.css";
+
+.highcart {
+  height: 170px;
+  width: 100%;
+  background-color: #2e3e4e;
+  position: relative;
+}
+
+.h-container {
+  height: 100px;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.highcart__container-for-logo {
+  height: 50px;
+  width: 100%;
+  background: #2e3e4e;
+  margin-bottom: 10px;
+}
+
+.highcart__container-for-percents {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 15px;
+  margin-top: 49px;
+  position: relative;
+  z-index: 99;
+}
+
+.container-for-percents__header {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.container-for-percents__percent-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.percent-wrapper__big-percent {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  color: #f5a623;
+  margin-right: 12px;
+}
+
+.percent-wrapper__small-percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, .15);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bot-block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/*Cards*/
+
+.bot-block__cards-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 176px;
+  padding: 5px 5px 0 5px;
+}
+
+.bot-block__card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  border-radius: 3px;
+  background-color: #f5a623;
+  padding: 10px;
+}
+
+.green-card {
+  background-color: #00b648;
+}
+
+.red-card {
+  background-color: #eb6258;
+}
+
+.card__header {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.13;
+  color: #ffffff;
+  width: 92px;
+  margin-right: 62px;
+}
+
+.card__info-text {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.card__info-plus {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, .1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+/*Departments*/
+
+.department__progress-bar_percent {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  color: #00b648;
+  margin-bottom: 4px;
+}
+
+.department__progress-bar_style {
+  width: 83%;
+  height: 4px;
+  border-radius: 30px;
+  background-color: #d1d1d1;
+  position: relative;
+  z-index: 1;
+}
+
+.department__progress-bar_progress-1:before,
+.department__progress-bar_progress-2:before,
+.department__progress-bar_progress-3:before,
+.department__progress-bar_progress-4:before {
+  content: '';
+  height: 100%;
+  border-radius: 30px;
+  background-color: #00b648;
+  position: absolute;
+  z-index: 2;
+}
+
+.low-progress-text {
+  color: #f5a623;
+}
+
+.super-low-progress-text {
+  color: #eb6258;
+}
+
+.department__header {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0.93;
+  color: #2a2a2a;
+  margin-bottom: 9px;
+}
+
+.bot-block__dep-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.bot-block__dep-header {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 0.93;
+  color: #787878;
+  margin: 20px 0 0 10px;
+}
+
+.dep-wrap__department {
+  display: flex;
+  flex-direction: column;
+  height: 62px;
+  padding: 18px 10px 0 10px;
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.department__progress-bar_percent {
+  font-size: 15px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.department__progress-bar_progress-1:before {
+  width: 57%;
+  background-color: #f5a623;
+}
+
+.department__progress-bar_progress-2:before {
+  width: 74%;
+  background-color: #f5a623;
+}
+
+.department__progress-bar_progress-3:before {
+  width: 84%;
+}
+
+.department__progress-bar_progress-4:before {
+  width: 32%;
+  background-color: #eb6258;
+}
+
+
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait){
+  .card__header {
+    margin-right: 103px;
+  }
+
+  .highcart {
+    height: 235px;
+  }
+
+  .highcart__container-for-percents {
+    margin-top: 115px;
+  }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+  .card__header {
+    margin-right: 355px;
+  }
+}
+
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+  .card__header {
+    margin-right: 425px;
+  }
+}
+
+

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReportsViewController: UIViewController {
+class ReportsViewController: WebViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,8 @@ class ReportsViewController: UIViewController {
         let barButtonItem = self.navigationItem.leftBarButtonItem!
         let profileImage = UIImage(named: "ava_1.png", in: nil, compatibleWith:nil)
         barButtonItem.image = profileImage?.withRenderingMode(.alwaysOriginal)
+        
+        fillWebView(subdirectory: "webview/reports")
     }
 
     override func didReceiveMemoryWarning() {

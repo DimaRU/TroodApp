@@ -1,0 +1,242 @@
+@import "../styles/reset.css";
+@import "../styles/globalStyles.css";
+
+.highcart {
+  height: 270px;
+  width: 100%;
+  background-color: #00b648;
+  padding: 11px 0;
+  position: relative;
+}
+
+.highcart__increase-element {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+  width: 62px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  left: 100px;
+  top: 77px;
+}
+
+.highcart__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.highcart > img {
+  position: absolute;
+  left: 14px;
+}
+
+.highcart__header-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.highcart__container {
+  width: 100%;
+  height: 240px;
+}
+
+.bot-block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/*Cards*/
+
+.bot-block__cards-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  flex-wrap: wrap;
+  padding: 5px 5px 0 5px;
+}
+
+.bot-block__card {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 70px;
+  border-radius: 2px;
+  background-color: #f4f4f4;
+  border: solid 1px #dcdcdc;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.card__header,
+.department__header {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0.93;
+  color: #2a2a2a;
+  margin-bottom: 9px;
+}
+
+.card__info-text,
+.department__progress-bar_percent {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  color: #00b648;
+  margin-bottom: 4px;
+}
+
+.card__progress-bar_style,
+.department__progress-bar_style {
+  height: 4px;
+  border-radius: 30px;
+  background-color: #d1d1d1;
+  position: relative;
+  z-index: 1;
+}
+
+.card__progress-bar_style {
+  width: 100%;
+}
+
+.card__progress-bar_progress_1:before,
+.card__progress-bar_progress_2:before,
+.card__progress-bar_progress_3:before,
+.card__progress-bar_progress_4:before,
+.department__progress-bar_progress-1:before,
+.department__progress-bar_progress-2:before,
+.department__progress-bar_progress-3:before,
+.department__progress-bar_progress-4:before,
+.department__progress-bar_progress-5:before {
+  content: '';
+  width: 85%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #00b648;
+  position: absolute;
+  z-index: 2;
+}
+
+.card__progress-bar_progress_2:before {
+  width: 81%;
+}
+
+.card__progress-bar_progress_3:before {
+  width: 79%;
+  background-color: #f5a623;
+}
+
+.card__progress-bar_progress_4:before {
+  width: 92%;
+}
+
+.low-progress-text {
+  color: #f5a623;
+}
+
+/*Departments*/
+
+.bot-block__dep-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.bot-block__dep-header {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 0.93;
+  color: #787878;
+  margin: 20px 0 0 10px;
+}
+
+.dep-wrap__department {
+  display: flex;
+  flex-direction: column;
+  height: 63px;
+  padding: 20px 10px 0 10px;
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+}
+
+.department__progress-bar_percent {
+  font-size: 15px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.department__progress-bar_style {
+  width: 83%;
+}
+
+.department__progress-bar_progress-1:before {
+  width: 85%;
+}
+
+.department__progress-bar_progress-2:before {
+  width: 84%;
+}
+
+.department__progress-bar_progress-3:before {
+  width: 84%;
+}
+
+.department__progress-bar_progress-4:before {
+  width: 79%;
+  background-color: #f5a623;
+}
+
+.department__progress-bar_progress-5:before {
+  width: 89%;
+}
+
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait){
+  .highcart__container {
+    width: 394px;
+    height: 235px;
+  }
+
+  .highcart {
+    height: 265px;
+  }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+  .highcart__container {
+    width: 648px;
+  }
+}
+
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+  .highcart__container {
+    width: 717px;
+  }
+}

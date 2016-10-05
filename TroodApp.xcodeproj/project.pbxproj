@@ -10,6 +10,8 @@
 		0A41EA931DA3C11F00F700B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41EA921DA3C11F00F700B5 /* AppDelegate.swift */; };
 		0A41EA9A1DA3C11F00F700B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41EA981DA3C11F00F700B5 /* Main.storyboard */; };
 		0A41EA9F1DA3C11F00F700B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A41EA9D1DA3C11F00F700B5 /* LaunchScreen.storyboard */; };
+		0A4772051DA57EFF003024CE /* webview in Resources */ = {isa = PBXBuildFile; fileRef = 0A4772041DA57EFF003024CE /* webview */; };
+		0A4772071DA58142003024CE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4772061DA58142003024CE /* WebViewController.swift */; };
 		0A49222F1DA4FB430028333B /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49222E1DA4FB430028333B /* EventsViewController.swift */; };
 		0A4922311DA501170028333B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4922301DA501170028333B /* ProfileViewController.swift */; };
 		0A8A811F1DA54078009B6566 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A811E1DA54078009B6566 /* FilterViewController.swift */; };
@@ -18,9 +20,6 @@
 		0AA2E40C1DA415F300A38A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2E40B1DA415F300A38A8E /* Assets.xcassets */; };
 		0AA2E4101DA4351B00A38A8E /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */; };
 		0AA2E4121DA4353200A38A8E /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E4111DA4353200A38A8E /* StatViewController.swift */; };
-		0AB8CDB21DA567E7007D668E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0AB8CDB11DA567E7007D668E /* index.html */; };
-		0AB8CDB71DA56E66007D668E /* globalStyles.css in Resources */ = {isa = PBXBuildFile; fileRef = 0AB8CDB61DA56E66007D668E /* globalStyles.css */; };
-		0AB8CDB91DA56E71007D668E /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = 0AB8CDB81DA56E71007D668E /* reset.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +28,8 @@
 		0A41EA991DA3C11F00F700B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A41EA9E1DA3C11F00F700B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A41EAA01DA3C11F00F700B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4772041DA57EFF003024CE /* webview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webview; sourceTree = "<group>"; };
+		0A4772061DA58142003024CE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0A49222E1DA4FB430028333B /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		0A4922301DA501170028333B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0A8A811E1DA54078009B6566 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -37,9 +38,6 @@
 		0AA2E40B1DA415F300A38A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
 		0AA2E4111DA4353200A38A8E /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
-		0AB8CDB11DA567E7007D668E /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		0AB8CDB61DA56E66007D668E /* globalStyles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = globalStyles.css; sourceTree = "<group>"; };
-		0AB8CDB81DA56E71007D668E /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,21 +70,20 @@
 		0A41EA911DA3C11F00F700B5 /* TroodApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A4772041DA57EFF003024CE /* webview */,
 				0AA2E40B1DA415F300A38A8E /* Assets.xcassets */,
-				0A41EA921DA3C11F00F700B5 /* AppDelegate.swift */,
 				0A41EA981DA3C11F00F700B5 /* Main.storyboard */,
-				0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */,
-				0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */,
+				0A4772061DA58142003024CE /* WebViewController.swift */,
+				0A49222E1DA4FB430028333B /* EventsViewController.swift */,
 				0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */,
 				0AA2E4111DA4353200A38A8E /* StatViewController.swift */,
-				0A41EA9D1DA3C11F00F700B5 /* LaunchScreen.storyboard */,
-				0A41EAA01DA3C11F00F700B5 /* Info.plist */,
-				0A49222E1DA4FB430028333B /* EventsViewController.swift */,
 				0A4922301DA501170028333B /* ProfileViewController.swift */,
 				0A8A811E1DA54078009B6566 /* FilterViewController.swift */,
-				0AB8CDB11DA567E7007D668E /* index.html */,
-				0AB8CDB61DA56E66007D668E /* globalStyles.css */,
-				0AB8CDB81DA56E71007D668E /* reset.css */,
+				0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */,
+				0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */,
+				0A41EA921DA3C11F00F700B5 /* AppDelegate.swift */,
+				0A41EAA01DA3C11F00F700B5 /* Info.plist */,
+				0A41EA9D1DA3C11F00F700B5 /* LaunchScreen.storyboard */,
 			);
 			path = TroodApp;
 			sourceTree = "<group>";
@@ -151,11 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4772051DA57EFF003024CE /* webview in Resources */,
 				0A41EA9F1DA3C11F00F700B5 /* LaunchScreen.storyboard in Resources */,
-				0AB8CDB21DA567E7007D668E /* index.html in Resources */,
-				0AB8CDB71DA56E66007D668E /* globalStyles.css in Resources */,
 				0AA2E40C1DA415F300A38A8E /* Assets.xcassets in Resources */,
-				0AB8CDB91DA56E71007D668E /* reset.css in Resources */,
 				0A41EA9A1DA3C11F00F700B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA2E4101DA4351B00A38A8E /* ReportsViewController.swift in Sources */,
+				0A4772071DA58142003024CE /* WebViewController.swift in Sources */,
 				0A41EA931DA3C11F00F700B5 /* AppDelegate.swift in Sources */,
 				0A8A811F1DA54078009B6566 /* FilterViewController.swift in Sources */,
 				0AA2E40A1DA4088100A38A8E /* TroodTabBar.swift in Sources */,

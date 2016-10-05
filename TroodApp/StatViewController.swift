@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class StatViewController: UIViewController {
+class StatViewController: WebViewController {
 
     @IBOutlet weak var statWebView: UIWebView!
     
@@ -19,6 +19,8 @@ class StatViewController: UIViewController {
         let barButtonItem = self.navigationItem.leftBarButtonItem!
         let profileImage = UIImage(named: "ava_1.png", in: nil, compatibleWith:nil)
         barButtonItem.image = profileImage?.withRenderingMode(.alwaysOriginal)
+        
+        fillWebView(subdirectory: "webview/stat")
         
     }
 
