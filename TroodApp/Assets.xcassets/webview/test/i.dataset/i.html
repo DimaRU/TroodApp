@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="../1jquery/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+<div id="container" style="width:100%; height:100%;"></div>
+<div id="container2" style="width:100%; height:100%;"></div>
+<script>
+  $(function() {
+    Highcharts.setOptions({
+      chart: {
+        renderTo: 'container',
+        backgroundColor: {
+        },
+        plotBackgroundColor: 'rgba(255, 255, 255, .1)',
+        plotShadow: true
+      }
+    });
+
+    var chart1 = new Highcharts.Chart({
+      chart: {
+        type: 'areaspline'
+      },
+      title: {
+        text: 'Оценка персонала'
+      },
+      xAxis: {
+        categories: [
+          'Янв',
+          'Фев',
+          'Март',
+          'Апр',
+          'Май',
+          'Июнь',
+          'Июль',
+          'Авг',
+          'Сен'
+        ],
+      },
+      tooltip: {
+        shared: true,
+        valueSuffix: ' units'
+      }
+      plotOptions: {
+        areaspline: {
+          fillOpacity: 0.5
+        }
+      },
+      series: [{
+        name: 'Jane',
+        data: [1, 2.5, 2, 2.5, 3, 4, 2.5, 3, 4]
+      }]
+    });
+  });
+</script>
+
+</body>
+</html>
