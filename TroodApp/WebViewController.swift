@@ -30,6 +30,7 @@ class WebViewController: UIViewController {
         
         webView.frame = self.view.bounds
         webView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        webView.scrollView.bounces = false
         
         if let htmlURL = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: subdirectory) {
             print(htmlURL)

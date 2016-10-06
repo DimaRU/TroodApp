@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -28,7 +28,7 @@
                             </connections>
                         </barButtonItem>
                         <view key="titleView" contentMode="center" id="9YO-yL-hOn">
-                            <rect key="frame" x="96" y="6" width="128" height="33"/>
+                            <rect key="frame" x="123.5" y="5.5" width="128" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xoA-GI-Cgf"/>
@@ -98,7 +98,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1tF-xE-QYz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vhL-Lv-qie">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -124,7 +124,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CI9-Ei-u8U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PaH-5U-OE2">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -190,7 +190,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0dr-1X-ptn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="att_p" badgeValue="3" selectedImage="att_a" id="Ydh-yh-WY8"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" shadowImage="B9DB000D-D6F8-4B5B-AAB8-8E5360A9F9B6" id="HNB-v6-euH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" shadowImage="F276CCA2-BB40-4997-B3CE-E590DE391B81" id="HNB-v6-euH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
@@ -216,7 +216,7 @@
                         <viewControllerLayoutGuide type="bottom" id="m07-ln-oED"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="slq-ti-CoR">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -320,7 +320,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="B9DB000D-D6F8-4B5B-AAB8-8E5360A9F9B6" width="97" height="20">
+        <image name="F276CCA2-BB40-4997-B3CE-E590DE391B81" width="97" height="20">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
