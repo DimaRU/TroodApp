@@ -21,6 +21,10 @@ class ReportViewController: WebViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tapExitButton(_ sender: UIBarButtonItem) {
+        
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
