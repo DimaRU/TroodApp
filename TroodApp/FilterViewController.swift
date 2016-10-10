@@ -8,12 +8,12 @@
 
 import UIKit
 
-class FilterViewController: WebViewController {
+class FilterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fillWebView(subdirectory: "webview/filters")
+//        fillWebView(subdirectory: "webview/filters")
     }
 
     override func didReceiveMemoryWarning() {
