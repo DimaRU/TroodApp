@@ -2,15 +2,14 @@
 @import "../styles/globalStyles.css";
 
 .highcart {
-  height: 270px;
+  height: 250px;
   width: 100%;
-  background-color: #00b648;
-  padding: 11px 0;
+  background-color: #eb6258;
   position: relative;
 }
 
 .highcart__increase-element {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -24,27 +23,7 @@
   justify-content: center;
   z-index: 999;
   left: 100px;
-  top: 77px;
-}
-
-.highcart__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-bottom: 5px;
-}
-
-.highcart > img {
-  position: absolute;
-  left: 14px;
-}
-
-.highcart__header-text {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  color: #ffffff;
+  top: 48px;
 }
 
 .highcart__container {
@@ -96,7 +75,7 @@
   font-size: 17px;
   font-weight: 600;
   line-height: 1;
-  color: #00b648;
+  color: #f5a623;
   margin-bottom: 4px;
 }
 
@@ -126,7 +105,7 @@
   width: 85%;
   height: 100%;
   border-radius: 30px;
-  background-color: #00b648;
+  background-color: #f5a623;
   position: absolute;
   z-index: 2;
 }
@@ -137,15 +116,20 @@
 
 .card__progress-bar_progress_3:before {
   width: 79%;
-  background-color: #f5a623;
+  background-color: #eb6258;
 }
 
 .card__progress-bar_progress_4:before {
   width: 92%;
+  background-color: #00b648;
 }
 
 .low-progress-text {
-  color: #f5a623;
+  color: #eb6258;
+}
+
+.high-progress-text {
+  color: #00b648;
 }
 
 /*Departments*/
@@ -154,7 +138,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 
 .bot-block__dep-header {
@@ -199,44 +182,42 @@
 
 .department__progress-bar_progress-4:before {
   width: 79%;
-  background-color: #f5a623;
+  background-color: #eb6258;
 }
 
 .department__progress-bar_progress-5:before {
   width: 89%;
 }
 
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait){
-  .highcart__container {
-    width: 394px;
-    height: 235px;
-  }
 
-  .highcart {
-    height: 265px;
-  }
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
 }
 
+/* Portrait */
 @media only screen
 and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-  .highcart__container {
-    width: 648px;
-  }
+and (orientation: portrait) {
+
 }
+
 
 @media only screen
 and (min-device-width: 414px)
-and (max-device-width: 736px)
+and (max-device-width: 414px)
 and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
+and (orientation: portrait){
   .highcart__container {
-    width: 717px;
+    width: 394px;
+    height: 245px;
+  }
+
+  .highcart {
+    height: 245px;
   }
 }

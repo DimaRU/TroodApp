@@ -48,22 +48,19 @@ $(document).ready(function() {
         enabled: false
       },
       subtitle: {
-        text: '83%'
+        text: '78%'
       },
       title: {
-        text: 'Оценка персонала'
+        text: 'Оценка клиентов'
       },
       xAxis: {
         categories: [
-          'Янв',
-          'Фев',
-          'Март',
-          'Апр',
           'Май',
           'Июнь',
           'Июль',
           'Авг',
-          'Сен'
+          'Сен',
+          'Окт',
         ]
       },
       yAxis: {
@@ -88,9 +85,8 @@ $(document).ready(function() {
           lineColor: '#fff',
           lineWidth: 3,
           marker: {
-            fillColor: '#00b648',
+            fillColor: '#eb6258',
             lineWidth: 2,
-            lineColor: null,
             radius: 6,
             lineColor: '#fff'// inherit from series
           }
@@ -98,7 +94,7 @@ $(document).ready(function() {
       },
       series: [{
         name: '',
-        data: [24, 49, 43, 47, 55, 75, 50, 63, 98],
+        data: [78, 72, 74, 69, 75, 78],
         color: 'rgba(255, 255, 255, 0.5)'
       }]
     });

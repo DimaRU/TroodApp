@@ -23,6 +23,8 @@ class TroodTabBarController: UITabBarController {
         let items = self.tabBar.items!
         for tabItem in items {
             tabItem.title = ""
+            tabItem.imageInsets.bottom = 0
+            //tabItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 10)
         }
     }
     

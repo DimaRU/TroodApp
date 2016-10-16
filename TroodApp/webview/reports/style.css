@@ -2,7 +2,7 @@
 @import "../styles/globalStyles.css";
 
 .highcart {
-  height: 170px;
+  height: 100px;
   width: 100%;
   background-color: #2e3e4e;
   position: relative;
@@ -16,19 +16,11 @@
   right: 0;
 }
 
-.highcart__container-for-logo {
-  height: 50px;
-  width: 100%;
-  background: #2e3e4e;
-  margin-bottom: 10px;
-}
-
 .highcart__container-for-percents {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 38%;
   margin-left: 15px;
-  margin-top: 49px;
   position: relative;
   z-index: 99;
 }
@@ -37,7 +29,8 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
-  color: #ffffff;
+  color: #fff;
+  margin-top: 29px;
 }
 
 .container-for-percents__percent-wrapper {
@@ -59,12 +52,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 62px;
+  min-width: 62px;
   height: 30px;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, .15);
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -110,7 +103,6 @@
   line-height: 1.13;
   color: #ffffff;
   width: 92px;
-  margin-right: 62px;
 }
 
 .card__info-text {
@@ -119,14 +111,13 @@
   line-height: 1;
   color: #ffffff;
   margin-right: 10px;
-  width: 80px;
 }
 
 .card__info-plus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
+  min-width: 70px;
   height: 30px;
   border-radius: 6px;
   background-color: rgba(0, 0, 0, .1);
@@ -151,7 +142,7 @@
   width: 83%;
   height: 4px;
   border-radius: 30px;
-  background-color: #d1d1d1;
+  background-color: #f4f4f4;;
   position: relative;
   z-index: 1;
 }
@@ -159,11 +150,12 @@
 .department__progress-bar_progress-1:before,
 .department__progress-bar_progress-2:before,
 .department__progress-bar_progress-3:before,
-.department__progress-bar_progress-4:before {
+.department__progress-bar_progress-4:before,
+.department__progress-bar_progress-5:before {
   content: '';
   height: 100%;
   border-radius: 30px;
-  background-color: #00b648;
+  background-color: #eb6258;
   position: absolute;
   z-index: 2;
 }
@@ -188,7 +180,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
 }
 
 .bot-block__dep-header {
@@ -202,8 +193,7 @@
 .dep-wrap__department {
   display: flex;
   flex-direction: column;
-  height: 62px;
-  padding: 18px 10px 0 10px;
+  padding: 18px 10px 10px 10px;
   border-bottom: 1px solid #dcdcdc;
   position: relative;
 }
@@ -216,60 +206,84 @@
 }
 
 .department__progress-bar_progress-1:before {
-  width: 57%;
-  background-color: #f5a623;
+  width: 76%;
 }
 
 .department__progress-bar_progress-2:before {
-  width: 74%;
-  background-color: #f5a623;
+  width: 79%;
 }
 
 .department__progress-bar_progress-3:before {
-  width: 84%;
+  width: 64%;
 }
 
 .department__progress-bar_progress-4:before {
-  width: 32%;
-  background-color: #eb6258;
+  width: 47%;
+}
+
+.department__progress-bar_progress-5:before {
+  width: 55%;
 }
 
 
 @media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait){
+and (min-device-width: 320px)
+and (max-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .department__header {
+    max-width: 250px;
+    line-height: 1;
+  }
+
+  .percent-wrapper__big-percent {
+    margin-right: 3px;
+  }
+
   .card__header {
-    margin-right: 103px;
+    font-size: 14px;
+    margin-right: 38px;
+    width: 80px
   }
 
-  .highcart {
-    height: 235px;
+  .card__info-text {
+    font-size: 32px;
   }
 
-  .highcart__container-for-percents {
-    margin-top: 115px;
+  .card__info-plus {
+    min-width: 55px;
+    font-size: 14px;
+  }
+
+  .container-for-percents__header {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+
+  .percent-wrapper__big-percent {
+    font-size: 34px;
   }
 }
+
 
 @media only screen
 and (min-device-width: 375px)
-and (max-device-width: 667px)
+and (max-device-width: 375px)
 and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
+and (orientation: portrait) {
   .card__header {
-    margin-right: 355px;
+    margin-right: 50px;
   }
 }
 
+
 @media only screen
 and (min-device-width: 414px)
-and (max-device-width: 736px)
+and (max-device-width: 414px)
 and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
+and (orientation: portrait){
   .card__header {
-    margin-right: 425px;
+    margin-right: 90px;
   }
 }
 

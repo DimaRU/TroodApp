@@ -10,7 +10,7 @@ Highcharts.theme = {
 		backgroundColor: {
 			linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
 			stops: [
-				[0, '#00b648']
+				[0, '#f5a623']
 			]
 		},
 		style: {
@@ -71,10 +71,16 @@ Highcharts.theme = {
 		}
 	},
 	tooltip: {
-		backgroundColor: 'rgba(0, 182, 72, 0.3)',
+		backgroundColor: 'rgba(245, 166, 35, 0.5)',
 		style: {
 			color: '#fff'
-		}
+		},
+		formatter: function() {
+			return 'Показатель за ' + this.x + ':<br>' + this.y + '%';
+		},
+		positioner: function () {
+			return { x: 180, y: 60 };
+		},
 	},
 	plotOptions: {
 		series: {

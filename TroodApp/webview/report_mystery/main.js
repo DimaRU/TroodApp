@@ -41,28 +41,26 @@ $(document).ready(function() {
       chart: {
         title: '',
         type: 'area',
-        renderTo: 'container'
+        renderTo: 'h-container',
+        marginTop: 105
       },
       legend: {
         enabled: false
       },
       subtitle: {
-        text: ''
+        text: '82%'
       },
       title: {
-        text: ''
+        text: 'Тайные покупатели'
       },
       xAxis: {
         categories: [
-          '',
-          '',
-          '',
-          '',
-          '',
-          '',
-          '',
-          '',
-          ''
+          'Май',
+          'Июнь',
+          'Июль',
+          'Авг',
+          'Сен',
+          'Окт',
         ]
       },
       yAxis: {
@@ -70,7 +68,9 @@ $(document).ready(function() {
           text: ''
         },
         labels: {
-          value: ''
+          formatter: function () {
+            return this.value + '%';
+          }
         },
         max: 100,
         minorTickInterval: 50,
@@ -85,16 +85,16 @@ $(document).ready(function() {
           lineColor: '#fff',
           lineWidth: 3,
           marker: {
-            fillColor: '#2c3e50',
-            lineWidth: 2, // inherit from series
-            radius: 4,
-            lineColor: '#fff'
+            fillColor: '#f5a623',
+            lineWidth: 2,
+            radius: 6,
+            lineColor: '#fff'// inherit from series
           }
         }
       },
       series: [{
         name: '',
-        data: [67, 72, 72, 73, 81, 83],
+        data: [64, 76, 72, 70, 84, 82],
         color: 'rgba(255, 255, 255, 0.5)'
       }]
     });

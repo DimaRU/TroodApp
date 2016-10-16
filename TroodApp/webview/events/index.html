@@ -3,15 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <script src="uilang.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Mirror_CX</title>
 </head>
 <body>
-<div class="main-block">
-  <div class="main-block__stage-bar"></div>
+<div class="light-box">
+  <div class="info-3">
+    <div class="info__info-wrapper">
+      <span class="info__date">вчера в 21:32</span>
+      <h3 class="info__header">Два отзыва подряд с оценкой
+        ниже 60%</h3>
+      <p class="info__where-text">Москва, «Авиапарк», Ходынский бульвар, 8, этаж 3</p>
+      <p class="info__region">Регион: Центр</p>
+      <p class="info__category">Признаки: Новый формат; Франчайзинг</p>
+    </div>
+    <a href="http://qcis.trood.ru" target="_blank" class="info__link">Посмотреть отзыв 11231</a>
+    <a href="http://qcis.trood.ru" target="_blank" class="info__link">Посмотреть отзыв 11232</a>
+    <a href="mailto:info@mirrorcx.com?subject=%D0%94%D0%B2%D0%B0%20%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%B0%20%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%20%D1%81%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%BE%D0%B9%20%20%D0%BD%D0%B8%D0%B6%D0%B5%2060%25&amp;body=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%C2%AB%D0%90%D0%B2%D0%B8%D0%B0%D0%BF%D0%B0%D1%80%D0%BA%C2%BB%2C%20%D0%A5%D0%BE%D0%B4%D1%8B%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%2C%208%2C%20%D1%8D%D1%82%D0%B0%D0%B6%203%0A%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%3A%20%D0%A6%D0%B5%D0%BD%D1%82%D1%80%0A%D0%9F%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%B8%3A%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%3B%20%D0%A4%D1%80%D0%B0%D0%BD%D1%87%D0%B0%D0%B9%D0%B7%D0%B8%D0%BD%D0%B3" class="info__link info__link_mailto">Отправить по почте</a>
+  </div>
+  <span class="light-box__close-btn">Закрыть</span>
+</div>
+<div class="main-block light-box">
   <div class="main-block__main-wrap">
     <div class="main-block__event-wrap stage-bar__circle_done">
-      <p class="event-wrap__event-header">Оценка Тайных покупателей ниже 50%</p>
+      <p class="event-wrap__event-header">Точка закрыта в рабочее время</p>
       <div class="event-wrap__event-info">
         <span class="event-info__location">ТЦ Авиапарк</span>
         <div class="event-info__dot"></div>
@@ -19,19 +35,27 @@
       </div>
     </div>
     <div class="main-block__event-wrap stage-bar__circle_done">
-      <p class="event-wrap__event-header">2 и более жалобы по одной и той же точке за 12 часов</p>
+      <p class="event-wrap__event-header">Оценка Тайного покупателя ниже 60%</p>
       <div class="event-wrap__event-info">
-        <span class="event-info__location">ТЦ Авиапарк</span>
+        <span class="event-info__location">Пятигорск, «Галерея»</span>
         <div class="event-info__dot"></div>
         <span class="event-info__date">сегодня в 9:07</span>
       </div>
     </div>
-    <div class="main-block__event-wrap stage-bar__circle_done">
-      <p class="event-wrap__event-header">Уровень удовлетворенности ниже 47% по 2 и более покупателям по точке за 12 часов</p>
+    <div class="main-block__event-wrap stage-bar__circle_done main-block__event-wrap_margin-bottom showLightBox-3">
+      <p class="event-wrap__event-header">Два отзыва подряд с оценкой ниже 60%</p>
       <div class="event-wrap__event-info">
-        <span class="event-info__location">ТЦ Авиапарк</span>
+        <span class="event-info__location">Нижний Новгород, «Космик»</span>
         <div class="event-info__dot"></div>
         <span class="event-info__date">вчера в 21:32</span>
+      </div>
+    </div>
+    <div class="main-block__event-wrap">
+      <p class="event-wrap__event-header">Оценка Тайного покупателя ниже 60%</p>
+      <div class="event-wrap__event-info">
+        <span class="event-info__location">Пятигорск, «Галерея»</span>
+        <div class="event-info__dot"></div>
+        <span class="event-info__date">вчера в 15:21</span>
       </div>
     </div>
     <div class="main-block__event-wrap">
@@ -43,30 +67,46 @@
       </div>
     </div>
     <div class="main-block__event-wrap">
-      <p class="event-wrap__event-header">Не выполнен супер-стандарт «Знание ассортимента»</p>
+      <p class="event-wrap__event-header">Точка закрыта в рабочее время</p>
       <div class="event-wrap__event-info">
-        <span class="event-info__location">ТЦ Авиапарк</span>
+        <span class="event-info__location">Москва, «Тульская»</span>
         <div class="event-info__dot"></div>
-        <span class="event-info__date">вчера в 9:56</span>
+        <span class="event-info__date">вчера в 15:21</span>
       </div>
     </div>
     <div class="main-block__event-wrap">
-      <p class="event-wrap__event-header">Уровень компетенции сотрудника менее 78% по точке</p>
+      <p class="event-wrap__event-header">Оценка Тайного покупателя ниже 60%</p>
       <div class="event-wrap__event-info">
-        <span class="event-info__location">Охотный ряд</span>
+        <span class="event-info__location">Пятигорск, «Галерея»</span>
         <div class="event-info__dot"></div>
-        <span class="event-info__date">1 октября</span>
+        <span class="event-info__date">вчера в 15:21</span>
       </div>
     </div>
     <div class="main-block__event-wrap">
-      <p class="event-wrap__event-header">Ухудшение по блоку/секции 2 и более периодов (по окончании периода)</p>
+      <p class="event-wrap__event-header">Оценка Тайного покупателя ниже 40%</p>
       <div class="event-wrap__event-info">
-        <span class="event-info__location">ТЦ Авиапарк</span>
+        <span class="event-info__location">Ростов-на-Дону, «Садовая»</span>
         <div class="event-info__dot"></div>
-        <span class="event-info__date">1 октября</span>
+        <span class="event-info__date">вчера в 15:21</span>
+      </div>
+    </div>
+    <div class="main-block__event-wrap">
+      <p class="event-wrap__event-header">Два отзыва подряд с оценкой ниже 60%</p>
+      <div class="event-wrap__event-info">
+        <span class="event-info__location">Нижний Новгород, «Космик»</span>
+        <div class="event-info__dot"></div>
+        <span class="event-info__date">вчера в 21:32</span>
       </div>
     </div>
   </div>
 </div>
 </body>
+
+<code>clicking on ".showLightBox-3" add class "show" on ".light-box"
+      clicking on ".showLightBox-3" add class "whenLightBoxIsUpDoItToEventHeader" on ".event-wrap__event-header"
+      clicking on ".showLightBox-3" add class "show" on ".info-3"
+      clicking on ".light-box__close-btn" remove class "show" on ".light-box"
+      clicking on ".light-box__close-btn" remove class "whenLightBoxIsUpDoItToEventHeader" on ".event-wrap__event-header"
+      clicking on ".light-box__close-btn" remove class "show" on ".info-3"
+</code>
 </html>
