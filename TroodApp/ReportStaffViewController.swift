@@ -1,19 +1,19 @@
 //
-//  ReportViewController.swift
+//  ReportStaffViewController.swift
 //  TroodApp
 //
-//  Created by Dmitriy Borovikov on 08.10.16.
+//  Created by Dmitriy Borovikov on 20.10.16.
 //  Copyright © 2016 Dmitriy Borovikov. All rights reserved.
 //
 
 import UIKit
 
-class ReportViewController: WebViewController {
+class ReportStaffViewController: WebViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fillWebView(subdirectory: "webview/report")
+        fillWebView(subdirectory: "webview/report_staff")
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,10 +21,6 @@ class ReportViewController: WebViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tapExitButton(_ sender: UIBarButtonItem) {
-        
-        presentingViewController?.dismiss(animated: true, completion: nil)
-    }
 
     /*
     // MARK: - Navigation
@@ -36,4 +32,9 @@ class ReportViewController: WebViewController {
     }
     */
 
+    @IBAction func tapExitButton(_ sender: UIBarButtonItem) {
+        
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
 }

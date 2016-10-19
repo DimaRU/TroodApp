@@ -14,13 +14,15 @@
 		0A4772071DA58142003024CE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4772061DA58142003024CE /* WebViewController.swift */; };
 		0A49222F1DA4FB430028333B /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49222E1DA4FB430028333B /* EventsViewController.swift */; };
 		0A4922311DA501170028333B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4922301DA501170028333B /* ProfileViewController.swift */; };
-		0A5587B61DA95973005453EF /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5587B51DA95973005453EF /* ReportViewController.swift */; };
 		0A8A811F1DA54078009B6566 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A811E1DA54078009B6566 /* FilterViewController.swift */; };
 		0AA2E4081DA4038D00A38A8E /* TroodTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */; };
 		0AA2E40A1DA4088100A38A8E /* TroodTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */; };
 		0AA2E40C1DA415F300A38A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2E40B1DA415F300A38A8E /* Assets.xcassets */; };
 		0AA2E4101DA4351B00A38A8E /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */; };
 		0AA2E4121DA4353200A38A8E /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2E4111DA4353200A38A8E /* StatViewController.swift */; };
+		0AC317AB1DB8233000D9C01B /* ReportClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC317AA1DB8233000D9C01B /* ReportClientsViewController.swift */; };
+		0AC317AD1DB8239A00D9C01B /* ReportMysteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC317AC1DB8239A00D9C01B /* ReportMysteryViewController.swift */; };
+		0AC317AF1DB8240800D9C01B /* ReportStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC317AE1DB8240800D9C01B /* ReportStaffViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +35,15 @@
 		0A4772061DA58142003024CE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0A49222E1DA4FB430028333B /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		0A4922301DA501170028333B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0A5587B51DA95973005453EF /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		0A8A811E1DA54078009B6566 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TroodTabBarController.swift; sourceTree = "<group>"; };
 		0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TroodTabBar.swift; sourceTree = "<group>"; };
 		0AA2E40B1DA415F300A38A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA2E40F1DA4351B00A38A8E /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
 		0AA2E4111DA4353200A38A8E /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
+		0AC317AA1DB8233000D9C01B /* ReportClientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportClientsViewController.swift; sourceTree = "<group>"; };
+		0AC317AC1DB8239A00D9C01B /* ReportMysteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMysteryViewController.swift; sourceTree = "<group>"; };
+		0AC317AE1DB8240800D9C01B /* ReportStaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportStaffViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +85,14 @@
 				0AA2E4111DA4353200A38A8E /* StatViewController.swift */,
 				0A4922301DA501170028333B /* ProfileViewController.swift */,
 				0A8A811E1DA54078009B6566 /* FilterViewController.swift */,
-				0A5587B51DA95973005453EF /* ReportViewController.swift */,
 				0AA2E4091DA4088100A38A8E /* TroodTabBar.swift */,
 				0AA2E4071DA4038D00A38A8E /* TroodTabBarController.swift */,
 				0A41EA921DA3C11F00F700B5 /* AppDelegate.swift */,
 				0A41EAA01DA3C11F00F700B5 /* Info.plist */,
 				0A41EA9D1DA3C11F00F700B5 /* LaunchScreen.storyboard */,
+				0AC317AA1DB8233000D9C01B /* ReportClientsViewController.swift */,
+				0AC317AC1DB8239A00D9C01B /* ReportMysteryViewController.swift */,
+				0AC317AE1DB8240800D9C01B /* ReportStaffViewController.swift */,
 			);
 			path = TroodApp;
 			sourceTree = "<group>";
@@ -167,13 +173,15 @@
 			files = (
 				0AA2E4101DA4351B00A38A8E /* ReportsViewController.swift in Sources */,
 				0A4772071DA58142003024CE /* WebViewController.swift in Sources */,
+				0AC317AF1DB8240800D9C01B /* ReportStaffViewController.swift in Sources */,
 				0A41EA931DA3C11F00F700B5 /* AppDelegate.swift in Sources */,
 				0A8A811F1DA54078009B6566 /* FilterViewController.swift in Sources */,
 				0AA2E40A1DA4088100A38A8E /* TroodTabBar.swift in Sources */,
 				0A49222F1DA4FB430028333B /* EventsViewController.swift in Sources */,
 				0AA2E4121DA4353200A38A8E /* StatViewController.swift in Sources */,
 				0A4922311DA501170028333B /* ProfileViewController.swift in Sources */,
-				0A5587B61DA95973005453EF /* ReportViewController.swift in Sources */,
+				0AC317AD1DB8239A00D9C01B /* ReportMysteryViewController.swift in Sources */,
+				0AC317AB1DB8233000D9C01B /* ReportClientsViewController.swift in Sources */,
 				0AA2E4081DA4038D00A38A8E /* TroodTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
