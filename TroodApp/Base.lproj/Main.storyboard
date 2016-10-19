@@ -28,7 +28,7 @@
                             </connections>
                         </barButtonItem>
                         <view key="titleView" contentMode="center" id="9YO-yL-hOn">
-                            <rect key="frame" x="124" y="6" width="128" height="33"/>
+                            <rect key="frame" x="123.5" y="5.5" width="128" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xoA-GI-Cgf"/>
@@ -282,6 +282,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Tdu-lO-Jnh" secondAttribute="trailing" id="zm1-wh-nu8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="rangeSelectionButtons" destination="9VE-Tx-L2c" collectionClass="NSMutableArray" id="yuz-vt-d8O"/>
+                        <outletCollection property="rangeSelectionButtons" destination="Tyu-G6-6rN" collectionClass="NSMutableArray" id="d6G-6s-7Ob"/>
+                        <outletCollection property="rangeSelectionButtons" destination="gpx-iD-6RU" collectionClass="NSMutableArray" id="oz9-bd-eJQ"/>
+                        <outletCollection property="tag1SelectionButtons" destination="w0b-ZM-2ci" collectionClass="NSMutableArray" id="R9L-Tr-lxW"/>
+                        <outletCollection property="tag1SelectionButtons" destination="ygb-PR-RnR" collectionClass="NSMutableArray" id="8Mw-9U-FLU"/>
+                        <outletCollection property="tag1SelectionButtons" destination="wHE-Ja-Ceg" collectionClass="NSMutableArray" id="HW8-40-fLI"/>
+                        <outletCollection property="tag1SelectionButtons" destination="b3A-wp-Qm2" collectionClass="NSMutableArray" id="JGf-en-JuQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTs-uT-BrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,7 +345,7 @@
                             </connections>
                         </barButtonItem>
                         <view key="titleView" contentMode="center" id="zne-fD-pnC">
-                            <rect key="frame" x="123.5" y="5.5" width="128" height="33"/>
+                            <rect key="frame" x="124" y="6" width="128" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8F6-9b-j5Z"/>
@@ -388,7 +397,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0dr-1X-ptn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="att_p" badgeValue="3" selectedImage="att_a" id="Ydh-yh-WY8"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" shadowImage="B3B757B3-9391-4E06-B90D-8C457FA5DDDC" id="HNB-v6-euH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" shadowImage="85D91541-9A87-44C3-878D-CD5D43BB66BA" id="HNB-v6-euH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
@@ -518,7 +527,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="B3B757B3-9391-4E06-B90D-8C457FA5DDDC" width="97" height="20">
+        <image name="85D91541-9A87-44C3-878D-CD5D43BB66BA" width="97" height="20">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA

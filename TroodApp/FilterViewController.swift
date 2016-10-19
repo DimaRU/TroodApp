@@ -10,10 +10,15 @@ import UIKit
 
 class FilterViewController: UIViewController {
 
+    
+    @IBOutlet var rangeSelectionButtons: [UIButton]!
+    
+    @IBOutlet var tag1SelectionButtons: [UIButton]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        fillWebView(subdirectory: "webview/filters")
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,5 +40,8 @@ class FilterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
 
 }
